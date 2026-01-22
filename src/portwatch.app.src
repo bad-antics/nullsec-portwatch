@@ -1,0 +1,9 @@
+{application, portwatch, [
+    {description, "NullSec PortWatch - Port Scanner & Service Detector"},
+    {vsn, "1.0.0"},
+    {registered, [portwatch]},
+    {mod, {portwatch_app, []}},
+    {applications, [kernel, stdlib]},
+    {env, []},
+    {modules, [portwatch, portwatch_app, portwatch_sup]}
+]}.
